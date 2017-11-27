@@ -10,7 +10,7 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.SearchView.OnQueryTextListener;
 
-public class MainActivity extends AppCompatActivity {
+public class contact_search extends AppCompatActivity {
     ListView lv;
     SearchView sv;
     String[] names={"Andrew","Ashley","Bryan","Bryant","Mike","Sabrina","Xueming"};
@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        lv=(ListView) findViewById(R.id.contactListView);
-        sv=(SearchView) findViewById(R.id.contactSearchView);
+        lv=(ListView) findViewById(R.id.listView1);
+        sv=(SearchView) findViewById(R.id.searchView1);
         //ADASPTER
         final contactAdapter adapter=new contactAdapter(this, getContacts());
         lv.setAdapter(adapter);
@@ -37,8 +37,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-        registerForContextMenu(lv);
     }
     private ArrayList<contact> getContacts()
     {
