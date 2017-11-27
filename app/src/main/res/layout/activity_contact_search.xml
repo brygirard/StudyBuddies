@@ -13,6 +13,7 @@
         android:iconifiedByDefault="false"
         >
     </SearchView>
+
     <ListView
         android:id="@+id/listView1"
         android:layout_width="match_parent"
