@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:adjustViewBounds="true"
-            android:maxHeight="99dp"
+            android:maxHeight="60dp"
             android:scaleType="fitCenter"
             android:src="@drawable/studybuddieslogo" />
 
@@ -45,38 +45,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CS 465"
-            android:textSize="30dp"
-            android:layout_marginTop="25dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ANTH 399"
-            android:textSize="30dp"
-            android:layout_marginTop="25dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
             />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ADV 120"
-            android:textSize="30dp"
-            android:layout_marginTop="25dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
             />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="BUS 199"
-            android:textSize="30dp"
-            android:layout_marginTop="25dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
             />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="40dp"
             android:maxWidth="60dp"
             android:maxHeight="60dp"
             android:adjustViewBounds="true"
@@ -89,7 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="10dp"
             android:maxWidth="60dp"
             android:maxHeight="60dp"
             android:adjustViewBounds="true"
