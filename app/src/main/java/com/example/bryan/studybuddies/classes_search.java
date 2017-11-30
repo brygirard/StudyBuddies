@@ -14,7 +14,8 @@ public class classes_search extends AppCompatActivity {
 
 
     //add class data
-
+    String[] classes = {"CS 100","CS 125", "CS 126", "CS 173", "CS 233", "CS 241", "CS 374", "CS465", "CS 498"};
+    ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +23,9 @@ public class classes_search extends AppCompatActivity {
         SearchView sv;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classes_search);
-        lv = (ListView) findViewById(R.id.listView1);
-        sv = (SearchView) findViewById(R.id.searchView1);
-        String[] classes = {"CS 100","CS 125", "CS 126", "CS 173", "CS 233", "CS 241", "CS 374", "CS465", "CS 498"};
-        final ArrayAdapter<String> adapter;
+        lv = (ListView) findViewById(R.id.contactListView);
+        sv = (SearchView) findViewById(R.id.contactSearchView);
+
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, classes);
         lv.setAdapter(adapter);
         sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
