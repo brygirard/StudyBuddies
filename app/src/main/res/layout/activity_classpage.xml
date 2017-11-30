@@ -81,6 +81,7 @@
             android:text="Campus Map"
             android:textSize="25dp"
             android:layout_marginTop="10dp"
+            android:onClick="buttonClickMapFunction"
             />
 
         <Button
@@ -89,6 +90,7 @@
             android:text="Check-In"
             android:textSize="25dp"
             android:layout_marginTop="10dp"
+            android:onClick="buttonClickPlaceFunction"
             />
     </LinearLayout>
 

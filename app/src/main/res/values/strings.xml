@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Study Buddies</string>
     <string name="bryant">BRYant</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

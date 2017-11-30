@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    tools:context="com.example.bryan.studybuddies.PlaceView">
+    tools:context="com.example.bryan.studybuddies.place">
 
 
     <ImageView
@@ -344,7 +344,6 @@
                 android:gravity="top"
                 android:paddingRight="5dp"
                 android:src="@drawable/message" />
-            <!--Make sure arrow takes up whole height so nothing is below it-->
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -352,7 +351,6 @@
                 android:gravity="bottom"
                 android:orientation="horizontal"
                 android:paddingTop="20dp" />
-
         </LinearLayout>
 
 
@@ -377,8 +375,5 @@
 
 
 </LinearLayout>
-
-
-
 
 
