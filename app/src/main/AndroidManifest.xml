@@ -25,7 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".classSearch" />
         <activity android:name=".contact_search" />
         <activity android:name=".ChatActivity" />
         <activity android:name=".classpage" />
@@ -49,6 +48,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.bryan.studybuddies.classpage" />
         </activity>
+        <activity android:name=".classes_search"></activity>
     </application>
 
 </manifest>

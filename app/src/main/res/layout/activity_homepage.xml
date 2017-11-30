@@ -83,7 +83,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:src="@drawable/plusbutton"
-            android:id="@+id/plusbutton"
+            android:onClick="buttonClickSearchFunction"
             />
 
         <ImageButton
@@ -96,6 +96,7 @@
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
             android:src="@drawable/contacticon"
+            android:onClick="buttonClickContactFunction"
             />
 
     </LinearLayout>

@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.MenuInflater;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.SearchView.OnQueryTextListener;
@@ -18,10 +17,10 @@ public class contact_search extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_contact_search);
         lv=(ListView) findViewById(R.id.listView1);
         sv=(SearchView) findViewById(R.id.searchView1);
-        //ADASPTER
+        //ADAPTER
         final contactAdapter adapter=new contactAdapter(this, getContacts());
         lv.setAdapter(adapter);
         sv.setOnQueryTextListener(new OnQueryTextListener() {
