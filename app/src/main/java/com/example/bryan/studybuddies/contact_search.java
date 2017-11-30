@@ -1,8 +1,11 @@
 package com.example.bryan.studybuddies;
 import java.util.ArrayList;
+
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ContextMenu;
+import android.view.MenuItem;
 import android.view.MenuInflater;
 import android.view.View;
 import android.widget.ListView;
@@ -36,6 +39,8 @@ public class contact_search extends AppCompatActivity {
                 return false;
             }
         });
+
+        registerForContextMenu(lv);
     }
     private ArrayList<contact> getContacts()
     {
@@ -55,6 +60,11 @@ public class contact_search extends AppCompatActivity {
         super.onCreateContextMenu(menu, v, menuInfo);
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.contact_search_menu, menu);
+        MenuItem item1 = menu.findItem(R.id.contact_message);
+        Intent intent1 = new Intent(this, ChatActivity.class);
+        item1.setIntent(intent1);
 
     }
+
+
 }
