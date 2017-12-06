@@ -6,12 +6,11 @@
 
 
     <ImageView
-        android:src="@drawable/studybuddieslogo"
-        android:layout_height="50dp"
-        android:layout_width="50dp"
-        android:layout_centerInParent="true"
-        android:layout_alignParentTop="true"
         android:id="@+id/contactLogo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/newlogo" />
         />
 
     <SearchView
