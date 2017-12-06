@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/classLogo"
-        android:queryHint="Search class.."
+        android:queryHint="Search.."
         android:iconifiedByDefault="false"
         >
     </SearchView>

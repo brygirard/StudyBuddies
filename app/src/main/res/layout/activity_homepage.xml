@@ -31,7 +31,7 @@
             android:maxHeight="90dp"
             android:maxWidth="90dp"
             android:adjustViewBounds="true"
-            android:src="@drawable/logo2"
+            android:src="@drawable/newlogo"
             android:scaleType="fitCenter"
             />
 
