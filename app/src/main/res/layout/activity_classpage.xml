@@ -19,32 +19,30 @@
             android:layout_height="wrap_content"
             android:text="CS465"
             android:fontFamily="@font/bangers"
-            android:textStyle="bold"
             android:textColor="@android:color/black"
-            android:textSize="50dp"
+            android:textSize="40dp"
             android:gravity="center_horizontal"
             />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="190dp"
-            android:maxHeight="70dp"
-            android:maxWidth="200dp"
+            android:layout_gravity="center"
+            android:maxHeight="90dp"
+            android:maxWidth="90dp"
             android:adjustViewBounds="true"
             android:src="@drawable/logo2"
         />
-
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ACTIVE CHATS"
-            android:textSize="40dp"
+            android:textSize="30dp"
             android:fontFamily="@font/bangers"
             android:textColor="@android:color/black"
             android:gravity="center_horizontal"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             />
         <Button
             android:layout_width="match_parent"
@@ -52,7 +50,7 @@
             android:text="EXAM 1"
             android:fontFamily="@font/bangers"
             android:textColor="@android:color/white"
-            android:textSize="35dp"
+            android:textSize="25dp"
             android:background="@android:color/holo_orange_dark"
             android:layout_marginTop="10dp"
             />
@@ -64,7 +62,7 @@
             android:textColor="@android:color/white"
             android:fontFamily="@font/bangers"
             android:background="@android:color/holo_orange_dark"
-            android:textSize="35dp"
+            android:textSize="25dp"
             android:layout_marginTop="10dp"
             />
 
@@ -75,7 +73,7 @@
             android:textColor="@android:color/white"
             android:fontFamily="@font/bangers"
             android:background="@android:color/holo_orange_dark"
-            android:textSize="35dp"
+            android:textSize="25dp"
             android:layout_marginTop="10dp"
             />
 
@@ -84,7 +82,7 @@
             android:layout_height="wrap_content"
             android:text="MAP VIEWS"
             android:fontFamily="@font/bangers"
-            android:textSize="40dp"
+            android:textSize="30dp"
             android:textColor="@android:color/black"
             android:gravity="center_horizontal"
             android:layout_marginTop="15dp"
@@ -97,7 +95,7 @@
             android:textColor="@android:color/white"
             android:fontFamily="@font/bangers"
             android:background="@android:color/holo_blue_dark"
-            android:textSize="35dp"
+            android:textSize="25dp"
             android:layout_marginTop="10dp"
             android:onClick="buttonClickMapFunction"
             />
@@ -109,7 +107,7 @@
             android:textColor="@android:color/white"
             android:background="@android:color/holo_blue_dark"
             android:fontFamily="@font/bangers"
-            android:textSize="35dp"
+            android:textSize="25dp"
             android:layout_marginTop="10dp"
             android:onClick="buttonClickPlaceFunction"
             />
