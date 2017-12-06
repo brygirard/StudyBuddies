@@ -28,7 +28,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        list.animate().translationY(1000);
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -57,6 +56,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         list.animate().translationY(0);
 
         //button.setVisibility(View.GONE);
+    }
+    public void viewSiebel(View v){
+        LatLng siebel = new LatLng(40.113803, -88.224905);
+
+        float zoomLevel = 18.5f;
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(siebel, zoomLevel));
+    }
+    public void viewGrainger(View v){
+        LatLng grainger = new LatLng(40.112500, -88.226917);
+
+        float zoomLevel = 18.5f;
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(grainger, zoomLevel));
     }
 
 
