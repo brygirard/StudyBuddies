@@ -15,8 +15,8 @@ import android.widget.SearchView.OnQueryTextListener;
 public class contact_search extends AppCompatActivity {
     ListView lv;
     SearchView sv;
-    String[] names={"Andrew","Ashley","Bryan","Bryant","Mike","Sabrina","Xueming"};
-    int[] images={R.drawable.contacticon,R.drawable.contacticon,R.drawable.contacticon,R.drawable.contacticon,R.drawable.contacticon,R.drawable.contacticon,R.drawable.contacticon};
+    String[] names={"Andrew","Adam","Briana","Brittney","Mike","Nick","Tana"};
+    int[] images={R.drawable.face1,R.drawable.face2,R.drawable.face3,R.drawable.face4,R.drawable.face5,R.drawable.face6,R.drawable.face7};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
