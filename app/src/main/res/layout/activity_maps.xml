@@ -110,7 +110,7 @@
                 android:layout_height="55dp"
                 android:gravity="top"
                 android:scaleType="centerCrop"
-                android:src="@drawable/grainger" />
+                android:src="@drawable/siebel" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
