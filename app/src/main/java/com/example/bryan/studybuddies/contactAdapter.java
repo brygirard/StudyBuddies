@@ -1,6 +1,7 @@
 package com.example.bryan.studybuddies;
 import java.util.ArrayList;
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,7 +49,9 @@ public class contactAdapter extends BaseAdapter implements Filterable{
         ImageView img=(ImageView) convertView.findViewById(R.id.contactIcon);
         //SET DATA TO THEM
         nameTxt.setText(contacts.get(pos).getName());
+        nameTxt.setTextColor(Color.BLACK);
         img.setImageResource(contacts.get(pos).getIcon());
+
         return convertView;
     }
     @Override
@@ -60,6 +63,7 @@ public class contactAdapter extends BaseAdapter implements Filterable{
         }
         return filter;
     }
+
     //INNER CLASS
     class CustomFilter extends Filter
     {

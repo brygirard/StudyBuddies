@@ -32,7 +32,13 @@
             android:maxHeight="90dp"
             android:maxWidth="200dp"
             android:adjustViewBounds="true"
+<<<<<<< HEAD
             android:src="@drawable/logo2"/>
+=======
+            android:maxHeight="60dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/newlogo" />
+>>>>>>> 298844ab13abee783cf949cfa81fa5f01fe55c10
 
 
 

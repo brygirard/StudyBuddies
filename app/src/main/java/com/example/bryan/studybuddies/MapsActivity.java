@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -24,11 +27,47 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+    }
+    public void closeListView(View v){
+        LinearLayout list = findViewById(R.id.listView1);
+        Button button = findViewById(R.id.listViewButton);
+
+        //button.setVisibility(View.VISIBLE);
+
+        list.animate().translationY(1000);
+        button.animate().translationY(0);
+
+        //list.setVisibility(View.GONE);
+    }
+    public void openListView(View v){
+
+        LinearLayout list = findViewById(R.id.listView1);
+        Button button = findViewById(R.id.listViewButton);
+
+        list.setVisibility(View.VISIBLE);
+
+        button.animate().translationY(1000);
+        list.animate().translationY(0);
+
+        //button.setVisibility(View.GONE);
+    }
+    public void viewSiebel(View v){
+        LatLng siebel = new LatLng(40.113803, -88.224905);
+
+        float zoomLevel = 18.5f;
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(siebel, zoomLevel));
+    }
+    public void viewGrainger(View v){
+        LatLng grainger = new LatLng(40.112500, -88.226917);
+
+        float zoomLevel = 18.5f;
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(grainger, zoomLevel));
     }
 
 
@@ -73,10 +112,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     }
 
-    public boolean onMarkerClick(final Marker marker) {
 
-
-
-        return true;
-    }
 }

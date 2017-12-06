@@ -2,4 +2,13 @@
     <string name="app_name">Study Buddies</string>
     <string name="bryant">BRYant</string>
     <string name="title_activity_maps">Map</string>
+    <string name="country_prompt">Choose a country</string>
+
+    <string-array name="places_arrays">
+        <item>Basement</item>
+        <item>First Floor</item>
+        <item>Second Floor</item>
+        <item>Third Floor</item>
+        <item>Fourth Floor</item>
+    </string-array>
 </resources>
