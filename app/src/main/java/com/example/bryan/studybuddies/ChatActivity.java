@@ -1,6 +1,7 @@
 package com.example.bryan.studybuddies;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -112,6 +113,13 @@ public class ChatActivity extends AppCompatActivity {
                 messageText.setText(model.getMessageText());
                 messageUser.setText(model.getMessageUser());
                 messageTime.setText(DateFormat.format("dd-MM-yyyy (HH:mm:ss)",model.getMessageTime()));
+                String author = model.getMessageUser();
+                if (author != null && author.equals(FirebaseAuth.getInstance().getCurrentUser().getEmail())){
+                    messageText.setBackgroundColor(Color.argb(100,128,205,50));
+                    messageUser.setText("me");
+                }
+                else
+                    messageText.setBackgroundColor(Color.argb(255,242,242,242));
             }
         };
         listOfMessage.setAdapter(adapter);
