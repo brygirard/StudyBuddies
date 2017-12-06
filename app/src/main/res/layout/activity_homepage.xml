@@ -29,7 +29,7 @@
             android:adjustViewBounds="true"
             android:maxHeight="60dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/studybuddieslogo" />
+            android:src="@drawable/newlogo" />
 
 
 
