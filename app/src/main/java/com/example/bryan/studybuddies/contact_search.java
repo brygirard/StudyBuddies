@@ -44,14 +44,14 @@ public class contact_search extends AppCompatActivity {
     }
     private ArrayList<contact> getContacts()
     {
-        ArrayList<contact> players=new ArrayList<contact>();
+        ArrayList<contact> contacts=new ArrayList<contact>();
         contact p;
         for(int i=0;i<names.length;i++)
         {
             p=new contact(names[i], images[i]);
-            players.add(p);
+            contacts.add(p);
         }
-        return players;
+        return contacts;
     }
 
     @Override
