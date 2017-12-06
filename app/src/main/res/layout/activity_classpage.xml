@@ -18,35 +18,42 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CS465"
-            android:textSize="30dp"
+            android:fontFamily="@font/bangers"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="50dp"
             android:gravity="center_horizontal"
             />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:adjustViewBounds="true"
-            android:maxWidth="70dp"
+            android:layout_marginLeft="190dp"
             android:maxHeight="70dp"
-            android:scaleType="fitCenter"
-            android:layout_marginLeft="141dp"
-            android:src="@drawable/studybuddieslogo" />
+            android:maxWidth="200dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo2"
+        />
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ACTIVE CHATS"
-            android:textSize="30dp"
+            android:textSize="40dp"
+            android:fontFamily="@font/bangers"
+            android:textColor="@android:color/black"
             android:gravity="center_horizontal"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="50dp"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="EXAM 1"
-            android:textSize="25dp"
+            android:fontFamily="@font/bangers"
+            android:textColor="@android:color/white"
+            android:textSize="35dp"
+            android:background="@android:color/holo_orange_dark"
             android:layout_marginTop="10dp"
             />
 
@@ -54,7 +61,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="HOMEWORK"
-            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/bangers"
+            android:background="@android:color/holo_orange_dark"
+            android:textSize="35dp"
             android:layout_marginTop="10dp"
             />
 
@@ -62,7 +72,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="DELIVERABLES"
-            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/bangers"
+            android:background="@android:color/holo_orange_dark"
+            android:textSize="35dp"
             android:layout_marginTop="10dp"
             />
 
@@ -70,7 +83,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="MAP VIEWS"
-            android:textSize="30dp"
+            android:fontFamily="@font/bangers"
+            android:textSize="40dp"
+            android:textColor="@android:color/black"
             android:gravity="center_horizontal"
             android:layout_marginTop="15dp"
             />
@@ -79,7 +94,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Campus Map"
-            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/bangers"
+            android:background="@android:color/holo_blue_dark"
+            android:textSize="35dp"
             android:layout_marginTop="10dp"
             android:onClick="buttonClickMapFunction"
             />
@@ -88,7 +106,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Check-In"
-            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_dark"
+            android:fontFamily="@font/bangers"
+            android:textSize="35dp"
             android:layout_marginTop="10dp"
             android:onClick="buttonClickPlaceFunction"
             />
